@@ -1,0 +1,51 @@
+/* Espacio de trabajo */
+#container{
+    box-sizing: border-box;
+    padding: 3%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 1100px) {
+    #container{ width: 50%; }
+}
+
+#titulo{
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+/* Campos de entrada de texto */
+.form-control, .btn, .form-check{ font-size: small; }
+.form-control{ padding: 15px 25px; }
+.form-control, .form-check-input{ background-color: #f8f9fa; }
+.form-control, .btn, .form-check{ 
+    border-radius: 15px;
+    margin-top: 20px;
+}
+textarea{ resize: none; }
+
+/* Checkbox */
+.form-check-input{ width: 1rem; height: 1rem; }
+.form-check-label{ padding-top: 2px; }
+
+/* Texto resaltado */
+#enlace{ 
+    font-weight: bold; 
+    color: #418FB0;
+}
+
+/* Botón */
+.btn{ 
+    background-color: #418FB0; 
+    border-color: #418FB0;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+/* Mensajes de error */
+#mensaje{ 
+    padding-top: 30px; 
+    color: red; 
+}

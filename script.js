@@ -20,6 +20,10 @@ $(document).ready(function(){
             error += "* Por favor, introduzca su email.</br>";
             $("#email").css({"border": "1px solid red"});
         }
+        else if((email.indexOf('.') == -1) || (email.indexOf('@') == -1)){
+            error += "* Por favor, introduzca un email válido.</br>";
+            $("#email").css({"border": "1px solid red"});
+        }
         else{ $("#email").css({"border": ""}); }
 
         if(comentarios.trim() == ""){
@@ -37,7 +41,8 @@ $(document).ready(function(){
         $("#mensaje").html(error);
 
         //Datos rellenados
-        if(nombre.trim() != "" && email.trim() != "" && comentarios.trim() != "" && $("#privacidad").is(":checked")){
+        //if(nombre.trim() != "" && email.trim() != "" && comentarios.trim() != "" && $("#privacidad").is(":checked")){
+        if(error == ""){
             var datos = $("#form-contacto").serialize();
             var mensaje = "";
 
